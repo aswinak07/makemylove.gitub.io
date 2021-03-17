@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="styless.css">
+	<title>love calculator</title>
+</head>
+<body>
+	<div class="calculator">
+		<div class="yourname">
+			<label for="" > your name</label> <br>
+			<input type="text" placeholder="yourname">
+	</div>
+	<h1 class="heart">
+	 <p id="answer"></p> <i class="fas fa-heart"></i>
+	</h1>
+
+<div class="partnername">
+			<label for=""> partnername</label> <br>
+			<input type="text" placeholder="partnername">
+	</div>
+	<input id="cal" type="submit" value="calculate" onclick="percentage(60,101)">
+</div>
+	<script >
+		function percentage(min, max) {
+			document.getElementById("answer").innerText = Math.floor(Math.random() * (max - min) + min) + "%";
+		}
+	</script>
+
+
+
+</body>
+</html>

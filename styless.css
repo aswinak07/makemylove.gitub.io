@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image:url(love-image-heart-4k-wallpaper-thumb.jpg);
+	background-size: cover;
+	height: 50vh;
+	width: 100%;
+}
+@font-face{
+	font-family: "pique";
+	src: url("pique.ttf");
+}
+.calculator{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	width: 70%;
+	height:50%;
+	box-sizing: border-box;
+
+}
+input{
+	padding: 10px;
+	margin: 0;
+	font-size: 25px;
+
+	border-radius: 15px;
+	border: 1px solid white;
+	background-image: linear-gradient(90deg , white, black);
+	outline: none;
+	box-shadow: 2px 4px 5px black;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px 10 red, 1px 2px 4px
+	black;
+}
+input::placeholder {
+	font-size: 20px;
+	text-align: center;
+	color: yellow;
+	text-shadow: 2px 4px 5px black;
+}
+label {
+	font-size: 30px;
+	position: relative;
+	letter-spacing: 6px;
+	font-family: piqeu;
+}
+.heart{
+	color: red;
+	font-size: 150px;
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -70%);
+}
+#cal {
+	position: absolute;
+	top: 95%;
+	width: 35%;
+	font-size: 20px;
+	text-transform: uppercase;
+	
+	text-shadow: 2px 3px 5px black;
+}
+.heart i {
+	animation: heart 0.6s ease-in infinite alternate;
+}
+@keyframes heart {
+	form{
+		font-size: 150px;
+	}
+	to{
+		font-size: 140px;
+	}
+}
